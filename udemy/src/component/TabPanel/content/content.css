@@ -1,0 +1,24 @@
+.lac-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: capitalize;
+}
+
+.lac-wraper .lac-title {
+  cursor: pointer;
+}
+
+.accordion-button {
+  background-color: #fff !important;
+}
+
+.accordion-button:focus {
+  border-color: 0 !important;
+  -webkit-box-shadow: 0 !important;
+          box-shadow: 0 !important;
+}
+/*# sourceMappingURL=content.css.map */

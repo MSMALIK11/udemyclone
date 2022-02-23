@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,OAAO,CAAA;EACH,OAAO,EAAE,gBAAgB;CAM5B;;AAPD,AAEI,OAFG,CAED,aAAa,CAAA;EACX,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;CAChB;;AAGL,AAAA,OAAO,CAAC,EAAE,CAAA;EACN,SAAS,EAAE,IAAI;EACf,KAAK,EAAC,IAAI;EACV,WAAW,EAAE,GAAG;CACnB",
+    "sources": [
+        "courseplayer.scss"
+    ],
+    "names": [],
+    "file": "courseplayer.css"
+}

@@ -1,0 +1,163 @@
+header {
+  background-color: #333;
+  z-index: 999 !important;
+  position: fixed;
+  width: 100%;
+}
+
+.head {
+  z-index: 999;
+}
+
+.navbar-brand h1 {
+  color: #fff;
+  font-family: 'Baloo Da 2', cursive;
+  letter-spacing: 0.2rem;
+  font-size: 2.3rem;
+}
+
+.navbar-brand h1 span {
+  color: #9b0e0e;
+}
+
+header p {
+  position: absolute;
+  display: block;
+  color: #fff;
+  top: 5rem;
+  left: 15%;
+  line-height: 1rem;
+  text-align: right;
+  font-family: 'Dancing Script', cursive;
+  text-transform: capitalize;
+  letter-spacing: 0.2rem;
+}
+
+header .nav-item .avatarimg {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 5px solid #fff;
+}
+
+header .nav-item .nav-link {
+  cursor: pointer;
+  border-bottom: 0.2rem solid rgba(255, 255, 255, 0);
+  margin: 0 2rem !important;
+}
+
+header .nav-item .nav-link .link {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+
+header .nav-item .nav-link:hover {
+  border-bottom: 0.2rem solid orange;
+}
+
+.nabar-toggler, .navbar-toggler-icon {
+  z-index: 999 !important;
+}
+
+.modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.modal .input-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  padding: 0.5rem 2rem;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: 0.1rem 0.1rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0.1rem 0.1rem 2rem rgba(0, 0, 0, 0.2);
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+
+.modal .input-wraper .icons {
+  font-size: 1.5rem;
+}
+
+.modal input {
+  background-color: #fff;
+  border: "5rem solid red" !important;
+  outline: 0;
+  border: none;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.modal input:focus {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.modal .signinbtn {
+  border: none;
+  padding: 0.4rem 8rem;
+  background-color: #9b0e0e;
+  font-size: 2rem;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: bold;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+
+.modal .signinbtn:hover {
+  background-color: green;
+  -webkit-box-shadow: 0 0 1 rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 1 rem rgba(0, 0, 0, 0.3);
+}
+
+.modal-backdrop {
+  z-index: 0 !important;
+}
+
+.modal .modal-content {
+  background-color: #eee;
+  width: 50rem;
+}
+
+.modal .modal-content .modal-body {
+  padding: 3rem 2rem;
+}
+
+.modal .modal-content .modal-body .left {
+  width: 100%;
+  height: 30vh;
+}
+
+form .cursor {
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */

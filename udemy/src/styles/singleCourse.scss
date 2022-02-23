@@ -1,0 +1,42 @@
+.main-container {
+  margin: 1.5rem 2rem;
+
+  position: relative;
+
+  & .start-btn {
+    color: #fff;
+    background-color: #222;
+    display: inline;
+    padding: 0.7rem 5rem;
+    list-style-type: none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+  }
+
+  & .course-baner {
+    height: 70vh;
+    background-size: cover;
+  }
+  & h3 {
+    margin-top: 4rem;
+  }
+  & .rating {
+    display: flex;
+    align-items: center;
+  }
+  & .course-title {
+    font-size: 2rem;
+  }
+  & .rating-box {
+    font-weight: bold;
+  }
+}
