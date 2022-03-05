@@ -7,7 +7,7 @@ const Signup = () => {
       <div className="signup-wraper mt-4">
         <div className="mt-5">
           <form>
-            <h1>WELCOME TO DLOCAL TECH</h1>
+            <h1>WELCOME TO GLOCAL TECH signup here...</h1>
             <input type="text" />
           </form>
         </div>
