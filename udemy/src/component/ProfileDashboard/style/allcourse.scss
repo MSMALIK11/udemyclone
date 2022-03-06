@@ -47,3 +47,19 @@
   opacity: 1;
   box-shadow: 0 0 5rem rgba(0, 0, 0, 0.3);
 }
+
+.all-course-cards {
+  .progress {
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+  }
+  .progress-bar {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-image: linear-gradient(to left, blue, black);
+    color: #fff;
+  }
+}

@@ -2,7 +2,10 @@ import React from "react";
 import img from "../../../images/img-1.jpg";
 import "../style/allcourse.scss";
 const Card = () => {
-  const prog = 40;
+  const min = 10;
+  const max = 100;
+  const prog = min + Math.random() * (max - min);
+
   return (
     <>
       <div className="  my-4 all-course-cards">
@@ -22,12 +25,12 @@ const Card = () => {
             <div
               className="progress-bar"
               role="progressbar"
-              style={{ width: `${prog}%`, background: "palevioletred" }}
+              style={{ width: `${prog}%` }}
               ariaValuenow="25"
               ariaValuemin="0"
               ariaValuemax="100"
             >
-              {prog}
+              {Math.ceil(prog)} %
             </div>
           </div>
         </div>
