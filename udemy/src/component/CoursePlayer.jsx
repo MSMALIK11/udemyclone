@@ -36,13 +36,13 @@ const CoursePlayer = () => {
           <div className="col-sm-12 col-12 col-lg-8 ">
             <div className="wraper">
               <h3>
-                Dashboard{" "}
+                Dashboard
                 <span>
                   <FontAwesomeIcon icon={faArrowRight} /> Course
-                </span>{" "}
+                </span>
                 <span className="text-capitalize">
                   <FontAwesomeIcon icon={faArrowRight} /> {Course.title}
-                </span>{" "}
+                </span>
               </h3>
 
               <div className="player-wraper mt-4 ">

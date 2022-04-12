@@ -1,12 +1,11 @@
 import "./styles/main.scss";
 import Navbar from "./component/Navbar";
-import Hero from "./component/Hero";
+
 import HomeCard from "./component/HomeCard.jsx";
 import SingleCourse from "./component/SingleCourse.jsx";
 import { Routes, Route } from "react-router-dom";
 import CoursePlayer from "./component/CoursePlayer";
-import Home from "./component/Home";
-import BannerReuse from "./component/BannerReuse";
+
 import SingleCourseDetails from "./component/TextCourse/SingleCourseDetails";
 import HomeBlog from "./component/blog/HomeBlog";
 import SinglePost from "./component/blog/SinglePost";
@@ -15,14 +14,18 @@ import Profile from "./component/ProfileDashboard/Profile";
 import { Provider } from "./component/context";
 import Login from "./component/Auth/Login";
 import Signup from "./component/Auth/Signup";
+import { Navigate } from "react-router-dom";
+import HomePage from "./pages/HomePage";
 function App() {
+  const user = "login";
+
   return (
     <Provider>
       <Navbar />
 
       <div style={{ paddingTop: "5rem" }}>
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/" element={<HomePage />} />
 
           {/* videos lacture routes */}
           <Route exact path="/course" element={<HomeCard />} />
@@ -45,7 +48,11 @@ function App() {
           {/* auth route */}
           <Route path="/login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
-          <Route exact path="/Dashboard/profile" element={<Profile />} />
+          <Route
+            exact
+            path="/Dashboard/profile"
+            element={user === "login" ? <Profile /> : <Navigate to="/" />}
+          />
         </Routes>
       </div>
     </Provider>

@@ -1,13 +1,12 @@
 import React, { useState } from "react";
-import Banner from ".././images/banner.webp";
 
 import "../styles/BannerReuse/bannerReuse.scss";
 import Taboptions from "./TextCourse/Taboptions";
 import TrendingCourse from "./TextCourse/TrendingCourse";
-// import Card from "./Card";
+
 import CourseSlider from "./CourseSlider";
 
-const BannerReuse = () => {
+const HomeTabOption = () => {
   const [activeTab, setActiveTab] = useState("beginner");
   return (
     <div className="mt-5">
@@ -37,4 +36,4 @@ const getCurrenttab = (tab) => {
   }
 };
 
-export default BannerReuse;
+export default HomeTabOption;

@@ -3,7 +3,6 @@ import "../styles/homecard.scss";
 import Category from "./Category";
 import CourseCard from "./CourseCard";
 
-import Hero from "./Hero";
 const HomeCard = () => {
   return (
     <div className="card-header">

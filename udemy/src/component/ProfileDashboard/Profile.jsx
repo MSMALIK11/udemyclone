@@ -11,7 +11,7 @@ import Mylearning from "./Mylearning.jsx";
 const Profile = () => {
   const { state } = useContext(Context);
   const { user } = state.user;
-  console.log(user.name);
+
   return (
     <>
       <div className="mt-4 user-profile-wraper">

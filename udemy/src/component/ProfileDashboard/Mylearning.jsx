@@ -11,10 +11,7 @@ const Mylearning = () => {
         My <span>Learning</span>
       </h1>
       <TabButton setActiveTab={setActiveTab} />
-      <div className="My-learning-current-tab">
-        {/* <Tab tab={tab} /> */}
-        {getCurrenTab(activeTab)}
-      </div>
+      <div className="My-learning-current-tab">{getCurrenTab(activeTab)}</div>
     </div>
   );
 };

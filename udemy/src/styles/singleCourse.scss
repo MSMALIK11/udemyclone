@@ -1,13 +1,10 @@
 .main-container {
-  margin: 1.5rem 2rem;
-
   position: relative;
 
   & .start-btn {
     color: #fff;
     background-color: #222;
-    display: inline;
-    padding: 0.7rem 5rem;
+
     list-style-type: none;
     border: none;
     font-size: 1.5rem;
@@ -20,10 +17,11 @@
     -moz-border-radius: 2rem;
     -ms-border-radius: 2rem;
     -o-border-radius: 2rem;
+    margin-right: 1rem;
   }
 
   & .course-baner {
-    height: 70vh;
+    height: 50vh;
     background-size: cover;
   }
   & h3 {
@@ -35,8 +33,51 @@
   }
   & .course-title {
     font-size: 2rem;
+    color: #fff;
+    line-height: 3rem;
   }
   & .rating-box {
     font-weight: bold;
+    color: #fff;
+  }
+  & .enroll {
+    display: none;
+  }
+  & .course-buy-wraper {
+    position: fixed;
+    right: 10%;
+    top: 15%;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 25rem;
+    height: 80vh;
+    padding: 2rem 1.4rem;
+    box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+  & .tutorial-video {
+    height: 17rem;
+    background-color: #222;
+  }
+  & .start-your-course-btn {
+    text-align: center;
+    width: 90%;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+    margin: 2rem 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-container {
+    & .start-btn {
+      font-size: 1.3rem;
+      padding: 0.7rem 4rem;
+    }
+    & .enroll {
+      display: block;
+    }
   }
 }

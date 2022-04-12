@@ -1,5 +1,5 @@
 import React, { useState, useContext, useEffect } from "react";
-import Hero from "./Hero";
+import Hero from "./HomeTopBanner";
 import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
