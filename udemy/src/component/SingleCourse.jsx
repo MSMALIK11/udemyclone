@@ -9,6 +9,8 @@ import { Context } from "./context";
 import { useContext } from "react";
 import ReactVideoPlayer from "./courseDetails/ReactVideoPlayer";
 import CourseByCard from "./courseDetails/CourseByCard";
+import MainDiscription from "./courseDescription/MainDiscription";
+import CourseStructure from "./courseDetails/CourseStructure";
 
 const SongleCourse = () => {
   const { state, dispatch } = useContext(Context);
@@ -31,6 +33,7 @@ const SongleCourse = () => {
   return (
     <div className="main-container mt-4 ">
       <div className="bg-dark position-relative">
+        {/* course free  price card */}
         <CourseByCard />
         <div className="container pb-4">
           <div className="row d-flex">
@@ -39,31 +42,22 @@ const SongleCourse = () => {
               <CourseTopRightDetails course={course} classTitle={classTitle} />
             </div>
             <div className="col-sm-12 col-md-12 col-lg-6  order-lg-last order-md-first  order-sm-first ">
-              <ReactVideoPlayer videoLink={course.lacture[0].link} />
+              <div className="d-sm-block d-md-block d-lg-none">
+                <ReactVideoPlayer videoLink={course.lacture[0].link} />
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       {/* course description  */}
-      <div className="container-fluid">
+      <div className="container mt-5">
         <Description />
-      </div>
-
-      <div className="main-content mt-4">
-        <div className="container">
-          <div className="description">
-            <h1 className="des-title  text-uppercase">description</h1>
-            <p className="des-para w-50 mt-4">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat. Ut wisi enim ad minim laoreet dolore magna aliquam
-              erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-              tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-              consequat
-            </p>
-          </div>
-          <h1>Course Content</h1>
+        <div className="mt-5">
+          <MainDiscription />
+        </div>
+        <div className="mt-5">
+          <CourseStructure />
         </div>
       </div>
     </div>

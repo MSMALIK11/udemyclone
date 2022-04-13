@@ -12,6 +12,15 @@
   z-index: 0;
 }
 
+.banner .banner-reuse {
+  padding-top: 6rem;
+  background-color: #ffff;
+}
+
+.banner .banner-reuse h1 {
+  font-size: 3rem;
+}
+
 .banner .banner-heading {
   margin-bottom: 4rem;
   height: 20rem;

@@ -1,6 +1,6 @@
 .main-container {
   position: relative;
-
+  margin-bottom: 5rem;
   & .start-btn {
     color: #fff;
     background-color: #222;
@@ -35,30 +35,22 @@
     font-size: 2rem;
     color: #fff;
     line-height: 3rem;
+    font-family: sail;
   }
   & .rating-box {
     font-weight: bold;
-    color: #fff;
+    color: #000;
   }
   & .enroll {
     display: none;
   }
   & .course-buy-wraper {
-    position: fixed;
-    right: 10%;
-    top: 15%;
-    background-color: rgba(0, 0, 0, 0.2);
-    width: 25rem;
-    height: 80vh;
     padding: 2rem 1.4rem;
-    box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(20px);
-    color: #fff;
-    margin-bottom: 2rem;
   }
+
   & .tutorial-video {
-    height: 17rem;
-    background-color: #222;
+    height: 14rem;
+    background-color: #444;
   }
   & .start-your-course-btn {
     text-align: center;
@@ -66,7 +58,46 @@
     font-weight: bold;
     letter-spacing: 0.2rem;
     font-size: 1.5rem;
-    margin: 2rem 0;
+    margin: 1rem 0;
+  }
+  & .course-buy-container {
+    width: 25rem;
+    height: 80vh;
+    position: fixed;
+    right: 10%;
+    top: 15%;
+    background-color: #fff;
+
+    box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.2);
+
+    color: #222;
+    margin-bottom: 2rem;
+    & .course-buy-content {
+      ul {
+        list-style-type: none;
+        li {
+          margin: 0.5rem 0;
+          text-transform: capitalize;
+          color: #444;
+          font-size: 1rem;
+        }
+        i {
+          color: #34835e;
+          margin-right: 0.6rem;
+        }
+      }
+    }
+  }
+
+  .top-heading-wraper {
+    img {
+      width: 3rem;
+      background-color: #fff;
+
+      filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
+      -webkit-filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
+      margin: 0 0.4rem;
+    }
   }
 }
 

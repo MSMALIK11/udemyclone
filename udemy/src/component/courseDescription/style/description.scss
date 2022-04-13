@@ -1,6 +1,6 @@
 .author {
   display: flex;
-  justify-content: space-between;
+
   .author-avatar {
     display: flex;
     // align-items: center;
@@ -65,3 +65,14 @@
     }
   }
 }
+
+// @media (max-width: 992px) {
+//   .author {
+//     display: block;
+//     justify-content: center;
+//     & .author-avatar {
+//       margin-bottom: 3rem;
+//       background-color: red;
+//     }
+//   }
+// }

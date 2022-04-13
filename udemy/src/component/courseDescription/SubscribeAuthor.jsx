@@ -4,7 +4,7 @@ import avatar from "../../images/avatar-2.jpg";
 const SubscribeAuthor = () => {
   return (
     <>
-      <div className="author container">
+      <div className="author container mt-5">
         <div className="author-avatar">
           <div className="img shadow">
             <img src={avatar} alt="" />
@@ -14,7 +14,7 @@ const SubscribeAuthor = () => {
             <button className=" subscribe-btn shadow">Subscribe</button>
           </div>
         </div>
-        <div className="author-like">
+        {/* <div className="author-like">
           <div className="box">
             <i className="bi bi-eye"></i>
             <h5>1452</h5>
@@ -31,7 +31,7 @@ const SubscribeAuthor = () => {
             <i className="bi bi-share"></i>
             <h5>20</h5>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
