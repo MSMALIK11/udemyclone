@@ -1,10 +1,11 @@
 import React from "react";
 import "./style/goalscontent.scss";
+import DescriptionTitle from "../common/DescriptionTitle";
 const GoalsContent = () => {
   return (
     <div className="mt-4 goals-content-wraper">
       {" "}
-      <h1>Goals</h1>
+      <DescriptionTitle title="Goals" />
       <ul>
         <li>
           <span>

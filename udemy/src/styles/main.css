@@ -1,3 +1,207 @@
+.course-structure-container {
+  width: 50vw;
+}
+
+.course-structure-container .accourian-container .accordian-item {
+  background-color: papayawhip;
+  position: relative;
+}
+
+.course-structure-container .accourian-container .accordian-item .accordian-title {
+  color: #000;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.course-structure-container .accourian-container .accordian-item .accordian-icon {
+  width: 2rem;
+  height: 2rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  right: 0;
+  top: 20%;
+  bottom: 0;
+  transform: translate(-50%, 15%);
+  -webkit-transform: translate(-50%, 15%);
+  -moz-transform: translate(-50%, 15%);
+  -ms-transform: translate(-50%, 15%);
+  -o-transform: translate(-50%, 15%);
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  border: 1px solid #7d7d7d74;
+  transition: all 0.4s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -ms-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+}
+
+.course-structure-container .accourian-container .accordian-body {
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+  -webkit-transition: all 2s ease-in;
+  transition: all 2s ease-in;
+  -webkit-transition: al 2s ease-in;
+  -moz-transition: al 2s ease-in;
+  -ms-transition: al 2s ease-in;
+  -o-transition: al 2s ease-in;
+}
+
+@media (max-width: 1220px) {
+  .course-structure-container {
+    width: 90vw;
+  }
+}
+
+.student-feedback-container .std-feedback-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+}
+
+.student-feedback-container .student-feedback-title {
+  font-size: 3rem;
+}
+
+.student-feedback-container .number-rating {
+  font-size: 6rem;
+  color: #be5a0e;
+}
+
+.student-feedback-container .left-rating-star {
+  font-size: 1.4rem;
+  padding: 0;
+  color: #be5a0e;
+}
+
+.student-feedback-container .left-progress-container {
+  margin-left: 2rem;
+  padding: 1rem;
+  width: 35rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.student-feedback-container .right-star-rating {
+  margin-left: 5rem;
+}
+
+.student-feedback-container .right-star-rating .rating-percent {
+  color: blueviolet;
+  margin-left: 1rem;
+}
+
+.student-feedback-container .right-star-rating .bi {
+  font-size: 1.4rem;
+  color: #be5a0e;
+}
+
+@media (max-width: 992px) {
+  .student-feedback-container {
+    display: none;
+  }
+}
+
+@media (max-width: 1220px) {
+  .student-feedback-container .std-feedback-wraper {
+    width: 80%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+  }
+  .student-feedback-container .right-star-rating {
+    margin: 0;
+  }
+}
+
+.reviews-container .reviews-title {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  margin-bottom: 2rem;
+}
+
+.reviews-container .reviews-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reviews-container .reviews-wraper .author-avatar {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 3.5rem;
+  -webkit-border-radius: 3.5rem;
+  -moz-border-radius: 3.5rem;
+  -ms-border-radius: 3.5rem;
+  -o-border-radius: 3.5rem;
+  background-color: orange;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reviews-container .reviews-wraper .auhtor-icon {
+  font-size: 2rem;
+}
+
+.reviews-container .reviews-wraper .author-details {
+  margin-left: 2rem;
+}
+
+.reviews-container .reviews-wraper .author-details .author-comment {
+  display: block;
+  margin-top: 0.7rem;
+}
+
+.reviews-container .reviews-wraper .author-details h4 {
+  padding: 0;
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.reviews-container .reviews-wraper .author-details .star {
+  margin-right: 1.5rem;
+}
+
+.reviews-container .reviews-wraper .author-details .star .bi {
+  color: #be5a0e;
+}
+
+.sidebar-container {
+  background-color: #00073d;
+}
+
 header {
   background-color: #fff;
   z-index: 999 !important;

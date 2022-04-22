@@ -1,17 +1,26 @@
 import React from "react";
 import ReactVideoPlayer from "./ReactVideoPlayer";
 import Securepayment from "./Securepayment";
-const CourseByCard = () => {
+import { useNavigate } from "react-router-dom";
+const CourseByCard = ({ course, classTitle }) => {
+  const navigate = useNavigate();
   return (
     <>
-      <div className="course-buy-container d-sm-none d-md-none d-lg-block">
+      <div className="course-buy-container ">
         <div className="tutorial-video">
           <h1 className="">video</h1>
         </div>
         <div className="course-buy-wraper">
           <div className="course-buy-card-details">
             <h4>Free</h4>
-            <button className="btn btn-primary start-your-course-btn">
+            <button
+              className="btn btn-primary start-your-course-btn"
+              onClick={() =>
+                navigate(`/course/${course.title}/${classTitle[0]}`, {
+                  state: { courses: course },
+                })
+              }
+            >
               Start Your Course
             </button>
             <div className="course-buy-content">

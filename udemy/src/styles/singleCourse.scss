@@ -64,7 +64,7 @@
     width: 25rem;
     height: 80vh;
     position: fixed;
-    right: 10%;
+    right: 5%;
     top: 15%;
     background-color: #fff;
 
@@ -101,7 +101,19 @@
   }
 }
 
+
+.description-title
+{
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
+  margin: 1rem 0;
+}
 @media (max-width: 767px) {
+  .description-title{
+    font-size: 2rem;
+  }
   .main-container {
     & .start-btn {
       font-size: 1.3rem;
@@ -110,5 +122,17 @@
     & .enroll {
       display: block;
     }
+  }
+}
+
+@media (max-width:1220px){
+  .course-buy-container{
+display: none;
+  }
+}
+@media (max-width:1300px){
+  .course-buy-container{
+right: 0;
+ width: 20rem;
   }
 }

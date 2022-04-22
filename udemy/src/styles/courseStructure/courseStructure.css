@@ -60,4 +60,10 @@
   -ms-transition: al 2s ease-in;
   -o-transition: al 2s ease-in;
 }
+
+@media (max-width: 1220px) {
+  .course-structure-container {
+    width: 90vw;
+  }
+}
 /*# sourceMappingURL=courseStructure.css.map */

@@ -16,6 +16,9 @@ import Login from "./component/Auth/Login";
 import Signup from "./component/Auth/Signup";
 import { Navigate } from "react-router-dom";
 import HomePage from "./pages/HomePage";
+import Dashboard from "./component/ProfileDashboard/Dashboard";
+import Sidebar from "./component/ProfileDashboard/Sidebar";
+import Mylearning from "./component/ProfileDashboard/Mylearning";
 function App() {
   const user = "login";
 
@@ -53,6 +56,15 @@ function App() {
             path="/Dashboard/profile"
             element={user === "login" ? <Profile /> : <Navigate to="/" />}
           />
+          {/* student  dashboard route  */}
+          <Route path="/admin" element={<Sidebar />}>
+          
+            <Route
+              exact
+              path="student"
+              element={<Mylearning />}
+            />
+          </Route>
         </Routes>
       </div>
     </Provider>

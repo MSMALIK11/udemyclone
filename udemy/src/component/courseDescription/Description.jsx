@@ -1,12 +1,11 @@
 import React from "react";
 import GoalsContent from "./GoalsContent";
-import SubscribeAuthor from "./SubscribeAuthor";
-
+import YourInstructor from "./Yourinstructor.jsx";
 const Description = () => {
   return (
     <>
       <div className="mt-5">
-        <SubscribeAuthor />
+        <YourInstructor />
 
         <GoalsContent />
       </div>

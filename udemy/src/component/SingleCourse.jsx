@@ -11,7 +11,11 @@ import ReactVideoPlayer from "./courseDetails/ReactVideoPlayer";
 import CourseByCard from "./courseDetails/CourseByCard";
 import MainDiscription from "./courseDescription/MainDiscription";
 import CourseStructure from "./courseDetails/CourseStructure";
-
+import StudentFeeback from "./courseDetails/StudentFeeback";
+import CourseReviews from "./courseDetails/CourseReviews";
+import GoalsContent from "./courseDescription/GoalsContent";
+import YourInstructor from "./courseDescription/Yourinstructor";
+import DescriptionTitle from "./common/DescriptionTitle";
 const SongleCourse = () => {
   const { state, dispatch } = useContext(Context);
 
@@ -34,7 +38,7 @@ const SongleCourse = () => {
     <div className="main-container mt-4 ">
       <div className="bg-dark position-relative">
         {/* course free  price card */}
-        <CourseByCard />
+        <CourseByCard course={course} classTitle={classTitle} />
         <div className="container pb-4">
           <div className="row d-flex">
             <div className="col-sm-12 col-md-12 col-lg-6   order-lg-first order-md-last order-sm-last ">
@@ -52,12 +56,23 @@ const SongleCourse = () => {
 
       {/* course description  */}
       <div className="container mt-5">
-        <Description />
+        {/* <Description /> */}
+        <GoalsContent />
         <div className="mt-5">
           <MainDiscription />
         </div>
         <div className="mt-5">
           <CourseStructure />
+        </div>
+        <div className="mt-5">
+          <StudentFeeback />
+        </div>
+        <div className="mt-5">
+          <CourseReviews />
+        </div>
+        <div className="mt-5">
+       <DescriptionTitle title="your instructor" />
+          <YourInstructor />
         </div>
       </div>
     </div>

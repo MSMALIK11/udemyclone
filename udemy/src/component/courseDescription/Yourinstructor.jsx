@@ -1,10 +1,11 @@
 import React from "react";
 import "./style/description.scss";
 import avatar from "../../images/avatar-2.jpg";
-const SubscribeAuthor = () => {
+const YourInstructor = () => {
   return (
     <>
       <div className="author container mt-5">
+        
         <div className="author-avatar">
           <div className="img shadow">
             <img src={avatar} alt="" />
@@ -37,4 +38,4 @@ const SubscribeAuthor = () => {
   );
 };
 
-export default SubscribeAuthor;
+export default YourInstructor;
