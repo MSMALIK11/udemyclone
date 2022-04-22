@@ -64,6 +64,11 @@ function App() {
               path="student"
               element={<Mylearning />}
             />
+            <Route
+              exact
+              path="courses"
+              element={<Dashboard />}
+            />
           </Route>
         </Routes>
       </div>
