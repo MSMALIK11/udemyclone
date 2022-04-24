@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBook, faBookDead, faHeart, faHome, faList, faMailBulk, faPaintBrush, faPhone, faQuestion, faVideo } from '@fortawesome/free-solid-svg-icons'
+import {  faBookDead, faHeart, faHome, faList, faMailBulk, faPaintBrush, faPhone, faQuestion, faVideo } from '@fortawesome/free-solid-svg-icons'
 
 const LeftSidebar = () => {
     return (

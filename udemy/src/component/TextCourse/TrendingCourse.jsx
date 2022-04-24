@@ -11,7 +11,7 @@ const TrendingCourse = () => {
            {
                 courses.map((course,index)=>{
                     return (
-                        <div className="col-lg-3 col-md-4 col-sm-12 m-2">
+                        <div key={course.id+index} className="col-lg-3 col-md-4 col-sm-12 m-2">
                          
                             <div className="shadow p-3 bg-light c-box">
                               

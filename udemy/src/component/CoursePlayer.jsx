@@ -3,7 +3,7 @@ import "../styles/courseplayer/courseplayer.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowRight,
-  faSignLanguage,
+ 
 } from "@fortawesome/free-solid-svg-icons";
 import ReactPlayer from "react-player";
 import CourseList from "./coursecontent/CourseList";

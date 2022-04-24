@@ -4,13 +4,12 @@ import {
   faStar,
   faStarHalfAlt,
   faUser,
-  faCheckCircle,
-  faDotCircle,
+
 } from "@fortawesome/free-solid-svg-icons";
-import { useNavigate } from "react-router-dom";
+
 import CustomButton from "./CustomButton";
 const CourseTopRightDetails = ({ course, classTitle }) => {
-  const navigate = useNavigate();
+
   return (
     <div>
       <div className="course-baner">

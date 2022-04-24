@@ -45,6 +45,8 @@ const getCurrentPage= (page)=>{
             return <Page2 />
         case 3:
             return <Page3 />
+        default:
+            break ;    
 
 
     }

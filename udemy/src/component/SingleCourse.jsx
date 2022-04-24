@@ -3,8 +3,8 @@ import "../styles/singleCourse.scss";
 
 import CourseTopRightDetails from "./courseDetails/CourseTopRightDetails";
 
-import { useLocation, useNavigate } from "react-router-dom";
-import Description from "./courseDescription/Description";
+import { useLocation } from "react-router-dom";
+
 import { Context } from "./context";
 import { useContext } from "react";
 import ReactVideoPlayer from "./courseDetails/ReactVideoPlayer";
@@ -21,16 +21,16 @@ const SongleCourse = () => {
 
   const location = useLocation();
   const course = location.state;
-  console.log(location.state);
+ 
   useEffect(() => {
     dispatch({
       type: "GET_COURSE",
       payload: course,
     });
-  }, []);
+  }, [course]);
   useEffect(() => {
     window.localStorage.setItem("courseList", JSON.stringify(course));
-  }, []);
+  }, [course]);
 
   const classTitle = course.lacture.map((session) => session.title);
 

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useReducer, createContext } from "react";
-import {} from "../videoscontent.js";
+
 const initialState = {
   user: null,
   courseList: null,

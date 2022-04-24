@@ -1,10 +1,10 @@
 
-import img1 from '../images/bg2.jpg'
-import imgb from '../images/img-1.jpg'
-import imga from '../images/img-2.jpg'
-import imgjs from '../images/img-3.jpg'
+// import img1 from '../images/bg2.jpg'
+// import imgb from '../images/img-1.jpg'
+// import imga from '../images/img-2.jpg'
+// import imgjs from '../images/img-3.jpg'
 
-import img5 from '../images/img-5.jpg'
+// import img5 from '../images/img-5.jpg'
 import img7 from '../images/img-7.jpg'
 
 import imgreact from '../images/react.jpeg';

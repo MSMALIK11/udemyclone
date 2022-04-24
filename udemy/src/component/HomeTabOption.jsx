@@ -12,7 +12,7 @@ const HomeTabOption = () => {
     <div className="mt-5">
       {/* <img src={Banner} alt="banner"className="banner-img" /> */}
 
-      <div className="container mt-5">
+      <div className=" mt-5">
         <div className="row">
           <div className="col-md-12  col-lg-3">
             <Taboptions activeTab={activeTab} setActiveTab={setActiveTab} />

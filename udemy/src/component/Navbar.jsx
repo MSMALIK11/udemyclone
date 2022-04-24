@@ -1,5 +1,5 @@
 import React, { useState, useContext, useEffect } from "react";
-import Hero from "./HomeTopBanner";
+
 import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -117,7 +117,7 @@ const Navbar = () => {
     const { data } = await userLogout();
     toast.success(data.message);
   };
-
+// custom component
   const SocialLogin = () => {
     return (
       <div className="google-login">
@@ -169,41 +169,35 @@ const Navbar = () => {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav ms-auto  text-center mt-sm-5 mt-lg-0 ">
                 <li className="nav-item ">
-                  <a className="nav-link active" aria-current="page">
-                    <Link to="/" className="link">
+                  
+                    <Link to="/" className="link nav-link ">
                       Home
                     </Link>
-                  </a>
+                 
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link">
-                    <Link to="/course" className="link">
+                
+                    <Link to="/course" className="link nav-link">
                       Course
                     </Link>
-                  </a>
+                
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link">
-                    <Link to="/blog" className="link">
+                 
+                    <Link to="/blog" className="link nav-link">
                       Blog
                     </Link>
-                  </a>
+                 
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link">
-                    <Link to="/Dashboard/profile" className="link">
+                
+                    <Link to="/Dashboard/profile" className=" nav-link">
                       Profile
                     </Link>
-                  </a>
+                
                 </li>
 
-                {/* <li className="nav-item">
-                  <a className="nav-link">
-                    <Link to="/Dashboard/fvrt" className="link">
-                      <i className="bi bi-heart"></i>
-                    </Link>
-                  </a>
-                </li> */}
+               
 
                 {users === null && (
                   <>
@@ -216,7 +210,8 @@ const Navbar = () => {
                         data-bs-target="#exampleModal"
                         data-bs-whatever="@mdo"
                       >
-                        <span className="link">signup</span>
+                        {/* <span className="link">signup</span> */}
+                        signup
                       </a>
                     </li>
                   </>
@@ -225,7 +220,7 @@ const Navbar = () => {
                   <>
                     <li className="nav-item " onClick={logout}>
                       <a className="nav-link">
-                        <span className="link"> Logout</span>
+                       Logout
                       </a>
                     </li>
                   </>
@@ -234,7 +229,7 @@ const Navbar = () => {
                   <>
                     <li className="nav-item ">
                       <a className="nav-link">
-                        <span className="link text-capitalize fs-5"> Hi'</span>
+                        <span className="link text-capitalize fs-5"> Hi MR.'</span>
                       </a>
                     </li>
                   </>
@@ -246,7 +241,7 @@ const Navbar = () => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  <div class="dropdown">
+                  <div className="dropdown">
                     <img
                       src={avatar}
                       alt=""
@@ -257,7 +252,7 @@ const Navbar = () => {
                     />
 
                     <ul
-                      class="dropdown-menu "
+                      className="dropdown-menu "
                       aria-labelledby="dropdownMenuButton1"
                     >
                       <div className="information dropdown-item">
@@ -269,12 +264,12 @@ const Navbar = () => {
                         )} */}
                       </div>
                       <li>
-                        <a class="dropdown-item" href="#">
-                          <Link to="Dashboard/profile">profile</Link>
-                        </a>
+                        
+                          <Link to="Dashboard/profile" className="dropdown-item">profile</Link>
+                        
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">
+                        <a className="dropdown-item" href="#">
                           Something else here
                         </a>
                       </li>
@@ -401,7 +396,7 @@ const Navbar = () => {
                 </form>
               ) : (
                 <form>
-                  <div class="input-wraper mb-5">
+                  <div className="input-wraper mb-5">
                     <div className="icon me-3">
                       <FontAwesomeIcon icon={faMailBulk} className="icons" />
                     </div>
@@ -416,7 +411,7 @@ const Navbar = () => {
                       className=""
                     />
                   </div>
-                  <div class="input-wraper mb-5">
+                  <div className="input-wraper mb-5">
                     <div className="icon me-3">
                       <FontAwesomeIcon icon={faLock} className="icons" />
                     </div>
@@ -438,18 +433,18 @@ const Navbar = () => {
                   >
                     Login
                   </button>
-                  <h5>
+                  <div>
                     Don,t have an Account
                     <a className="text-primary cursor" onClick={togglelogin}>
                       Create Account
                     </a>
-                  </h5>
+                  </div>
                 </form>
               )}
             </div>
           </div>
 
-          <div class="text-center p-3 text-light bg-warning">
+          <div className="text-center p-3 text-light bg-warning">
             <h3 className="text-capitalize">
               Don't worry your information will be secure{" "}
             </h3>

@@ -1,20 +1,27 @@
-
-.banner{
-    width: 100%;
-  position: absolute;
-//   top: 20%;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  background-image: url(../images/g.jpg);
+.banner-main{
+ background-image: url(../images/g.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 120vh;
-  z-index: 0;
 
+  z-index: 0;
  
-& .banner-reuse{
+height:120vh;
+}
+.banner{
+    width: 80vw;
+    margin: 0 auto;
+// display: flex;
+// align-items: center;
+
+// text-align: center;
+padding-top: 5rem;
  
+ 
+
+    
+}
+ .banner-reuse{
+ text-align: center;
   padding-top: 6rem;
   background-color: #ffff;
 
@@ -22,87 +29,74 @@
     font-size: 3rem;
   }
 }
-    
-}
-.banner .banner-heading{
-    margin-bottom: 4rem;
-    height: 20rem;
-    perspective: 50rem;
-    overflow: hidden;
-    margin-top: 4rem;
-   
-}
+
 .banner-heading span {
     font-family: "Oswald", sans-serif;
-    font-size: 12rem;
+    font-size: 4rem;
     font-weight: 400;
+  
     text-transform: uppercase;
     color: #fff;
     text-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
-    position: absolute;
-    width: 100%;
+  font-size: 72px;
+ background: linear-gradient(to right,#9b0e0e,#3a1010);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
     display: flex;
     justify-content: center;
     transform: translateZ(8rem);
-    opacity: 0;
-    letter-spacing: 3rem;
+ 
+    letter-spacing: 1rem;
   }
-  .heading-1 {
-    animation: animateHeading 12s 3s infinite;
-  }
+//   .heading-1 {
+//     animation: animateHeading 12s 3s infinite;
+//   }
   
-  .heading-2 {
-    animation: animateHeading 12s 6s infinite;
-  }
+//   .heading-2 {
+//     animation: animateHeading 12s 6s infinite;
+//   }
   
-  .heading-3 {
-    animation: animateHeading 12s 9s infinite;
-  }
+//   .heading-3 {
+//     animation: animateHeading 12s 9s infinite;
+//     -webkit-animation: animateHeading 12s 9s infinite;
+// }
   
-  .heading-4 {
-    animation: animateHeading 12s 12s infinite;
-  }
+//   .heading-4 {
+//     animation: animateHeading 12s 12s infinite;
+//     -webkit-animation: animateHeading 12s 12s infinite;
+// }
 
 
-@keyframes animateHeading {
-    0% {
-      transform: translateZ(8rem);
-      opacity: 0;
-      letter-spacing: 3rem;
-    }
-    3% {
-      transform: translateZ(0);
-      opacity: 1;
-      letter-spacing: 1.5rem;
-    }
-    25% {
-      transform: translateZ(0);
-      opacity: 1;
-      letter-spacing: 1.5rem;
-    }
-    28% {
-      transform: translateZ(8rem);
-      opacity: 0;
-      letter-spacing: 3rem;
-    }
-    100% {
-      transform: translateZ(8rem);
-      opacity: 0;
-      letter-spacing: 3rem;
-    }
-  }
+// @keyframes animateHeading {
+//     0% {
+//       transform: translateZ(8rem);
+//       opacity: 0;
+//       letter-spacing: 3rem;
+//     }
+//     3% {
+//       transform: translateZ(0);
+//       opacity: 1;
+//       letter-spacing: 1.5rem;
+//     }
+//     25% {
+//       transform: translateZ(0);
+//       opacity: 1;
+//       letter-spacing: 1.5rem;
+//     }
+//     28% {
+//       transform: translateZ(8rem);
+//       opacity: 0;
+//       letter-spacing: 3rem;
+//     }
+//     100% {
+//       transform: translateZ(8rem);
+//       opacity: 0;
+//       letter-spacing: 3rem;
+//     }
+//   }
 
-  .banner-para{
-      position: relative;
-     
-      color: #fff;
-      font-size: 3rem;
-      background-color: rgba(0, 0, 0, 0.5);
-      width: 40%;
-      margin:4rem auto;
-      padding: 2.5rem;
-
-  }
+ 
   
   .banner-btn{
      border-radius: 3rem;
@@ -123,6 +117,7 @@
      -webkit-animation: fadeAnimation 1s 2s forwards    ;
      position: relative;
      overflow: hidden;
+     margin: 3rem 0;
 }
 .banner-btn::before{
     content: "";
@@ -143,3 +138,29 @@
     left: 100%;
 }
 
+
+@media (max-width:768px) {
+  .banner-main{
+   
+  }
+  .banner{
+    height:50vh;
+    width:100vw;
+    text-align: center;
+
+    .banner-heading span{
+      font-size:2.4rem;
+      text-align: center;
+      line-height: 3.5rem;
+  
+    }
+  }
+
+  .banner-btn{
+    width: 15rem;
+     height: 3rem;
+     font-size: 1rem;
+    
+
+  }
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import avatar from './images/avatar.png'
+
 import DescriptionTitle from "../common/DescriptionTitle";
 const CourseReviews = () => {
   const data=[

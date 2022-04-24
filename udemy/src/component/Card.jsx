@@ -29,50 +29,7 @@ const Card = () => {
   return (
     <>
       <div className="heading-wraper  mt-5 ms-4">
-        {/* <div className="wraper">
-          <h1 className="text-capitalize">web development </h1>
-          <p>
-            choose from +10.000 courses with new additions published every
-            months
-          </p>
-        </div> */}
-        {/* trending component */}
-        {/* <div className="wraper">
-          <div class="dropdown">
-            <button
-              class="btn  dropdown-toggle me-5"
-              type="button"
-              title="Trending"
-              id="dropdownMenuButton1"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Trending
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li>
-                <a class="dropdown-course" href="#">
-                  Newest
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-course" href="#">
-                  Populer
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-course" href="#">
-                  Free
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-course" href="#">
-                  Premium
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div> */}
+        
       </div>
       {data === null ? (
         <div class="d-flex justify-content-center">
@@ -85,6 +42,7 @@ const Card = () => {
           {content.courses.map((course, index) => {
             return (
               <div
+              key={course.id+index}
                 className="col-sm-12 col-md-6 col-lg-4"
                 onClick={() =>
                   navigate(`/course/${course.title}`, {
