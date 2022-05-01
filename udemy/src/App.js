@@ -51,24 +51,20 @@ function App() {
           {/* auth route */}
           <Route path="/login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
-          <Route
+          {/* <Route
             exact
             path="/Dashboard/profile"
             element={user === "login" ? <Profile /> : <Navigate to="/" />}
-          />
+          /> */}
           {/* student  dashboard route  */}
           <Route path="/admin" element={<Sidebar />}>
-          
             <Route
               exact
-              path="student"
-              element={<Mylearning />}
+              path="/admin"
+              element={<Navigate replace to="profile" />}
             />
-            <Route
-              exact
-              path="courses"
-              element={<Dashboard />}
-            />
+            <Route exact path="profile" element={<Profile />} />
+            <Route exact path="courses" element={<Mylearning />} />
           </Route>
         </Routes>
       </div>

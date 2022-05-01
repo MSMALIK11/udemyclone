@@ -191,7 +191,7 @@ const Navbar = () => {
                 </li>
                 <li className="nav-item">
                 
-                    <Link to="/Dashboard/profile" className=" nav-link">
+                    <Link to="/admin" className=" nav-link">
                       Profile
                     </Link>
                 
@@ -265,7 +265,7 @@ const Navbar = () => {
                       </div>
                       <li>
                         
-                          <Link to="Dashboard/profile" className="dropdown-item">profile</Link>
+                          <Link to="/admin" className="dropdown-item">profile</Link>
                         
                       </li>
                       <li>

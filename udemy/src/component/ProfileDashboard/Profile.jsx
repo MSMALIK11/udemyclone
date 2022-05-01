@@ -6,7 +6,7 @@ import "./style/profile.scss";
 import avatar from "./images/avatar.png";
 import img1 from "./images/p-1.svg";
 import img2 from "./images/p-2.svg";
-import Mylearning from "./Mylearning.jsx";
+
 
 const Profile = () => {
   const { state } = useContext(Context);
@@ -14,7 +14,7 @@ const Profile = () => {
 
   return (
     <>
-      <div className="mt-4 user-profile-wraper">
+      <div className="mt-1 user-profile-wraper">
         <div className="user-profile">
           <div className="user-avatar">
             <img src={avatar} alt="avatar" />
@@ -59,7 +59,7 @@ const Profile = () => {
           </div>
         </div>
       </div>
-      <Mylearning />
+      {/* <Mylearning /> */}
     </>
   );
 };

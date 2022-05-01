@@ -15,7 +15,7 @@ const Sidebar = () => {
   const [isOpen,setIsOpen]=React.useState(false)
   const routeData = [
     {
-      path: "student",
+      path: "profile",
       name: "Dashboard",
       icon: <BsSpeedometer />,
     },
@@ -89,7 +89,7 @@ const Sidebar = () => {
         </section>
       </motion.div>
 
-      <main>
+      <main style={{width:'100%'}}>
         <Outlet />
       </main>
     </div>

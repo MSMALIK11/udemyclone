@@ -7,8 +7,8 @@ const HomeCard = () => {
   return (
     <div className="card-header">
       <div className="row">
-        <div className="col-lg-3 d-md-none d-sm-none d-lg-block">
-          <Category />
+        <div className="col-lg-3 course-left-category">
+          {/* <Category /> */}
         </div>
         <div className="col-lg-9  col-sm-12">
           <CourseCard />

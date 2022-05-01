@@ -34,3 +34,6 @@ export const getUserInfo = async () => {
     console.log("error while getting user informations", error);
   }
 };
+
+getUserInfo();
+
