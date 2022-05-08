@@ -15,24 +15,7 @@ const YourInstructor = () => {
             <button className=" subscribe-btn shadow">Subscribe</button>
           </div>
         </div>
-        {/* <div className="author-like">
-          <div className="box">
-            <i className="bi bi-eye"></i>
-            <h5>1452</h5>
-          </div>
-          <div className="box">
-            <i className="bi bi-hand-thumbs-up"></i>
-            <h5>50</h5>
-          </div>
-          <div className="box">
-            <i className="bi bi-hand-thumbs-down"></i>
-            <h5>7</h5>
-          </div>
-          <div className="box">
-            <i className="bi bi-share"></i>
-            <h5>20</h5>
-          </div>
-        </div> */}
+       
       </div>
     </>
   );

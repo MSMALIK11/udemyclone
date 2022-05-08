@@ -1,18 +1,19 @@
-import React, { useState, useEffect, useContext } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faCoffee,
+
   faStar,
   faStarHalfAlt,
 } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
-import { Context } from "./context";
+// import { Link } from "react-router-dom";
+// import { Context } from "./context";
 import content from "./videoscontent";
 import { useNavigate } from "react-router-dom";
+import Loading from "./common/Loading";
 
 const Card = () => {
-  const [data, setCourseList] = useState([]);
-  const { state, dispatch } = useContext(Context);
+ 
+  
 
   const navigate = useNavigate();
 
@@ -28,21 +29,15 @@ const Card = () => {
 
   return (
     <>
-      <div className="heading-wraper  mt-5 ms-4">
-        
-      </div>
-      {data === null ? (
-        <div class="d-flex justify-content-center">
-          <div class="spinner-border" role="status">
-            <span class="visually-hidden">Loading...</span>
-          </div>
-        </div>
+      <div className="heading-wraper  mt-5 ms-4"></div>
+      {content === null ? (
+        <Loading />
       ) : (
         <div className="row">
           {content.courses.map((course, index) => {
             return (
               <div
-              key={course.id+index}
+                key={course.id + index}
                 className="col-sm-12 col-md-6 col-lg-4"
                 onClick={() =>
                   navigate(`/course/${course.title}`, {
@@ -52,8 +47,8 @@ const Card = () => {
                 }
               >
                 <div className="card my-4 rounded shadow v-course">
-                  <img src={course.image} className="card-img-top" />
-                  <p className="views">143k views</p>
+                  <img src={course.image} className="card-img-top" alt={course.title} />
+                  {/* <p className="views">143k views</p> */}
                   <div className="best-seller">
                     <p>Best seller</p>
                   </div>

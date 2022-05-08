@@ -9,7 +9,7 @@ import ReactPlayer from "react-player";
 import CourseList from "./coursecontent/CourseList";
 import { Context } from "./context";
 
-import { useLocation, useParams } from "react-router-dom";
+import {  useParams } from "react-router-dom";
 
 const CoursePlayer = () => {
   const [video, setVideo] = useState([]);
@@ -30,7 +30,7 @@ const CoursePlayer = () => {
   const index = 1;
 
   return (
-    <div className="mt-5">
+    <div className="course-player-container-wraper margin-top">
       <div className="container-fluid">
         <div className="row">
           <div className="col-sm-12 col-12 col-lg-8 ">

@@ -12,7 +12,7 @@ const StudentFeeback = () => {
           <h1 className="number-rating">5.0</h1>
           <div className="left-rating-star">
             {[1, 2, 3, 4, 5].map((item, i) => (
-              <span>
+              <span key={i}>
                 <i className="bi bi-star-fill ms-1"></i>
               </span>
             ))}

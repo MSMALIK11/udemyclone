@@ -1,0 +1,100 @@
+// addCourse component 
+// input box component 
+
+
+.create-course-container{
+   
+    width: 100%;
+    height: 90vh;
+    margin-top: 8rem;
+
+
+    & form{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+.input-box-wraper{
+    
+    display: flex;
+    flex-direction: column;
+
+
+    & .input-box-element{
+        width: 100%;
+        position: relative;
+        background-color:#eee;
+        height: 4rem;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius:1rem;
+        -webkit-border-radius:1rem;
+        -moz-border-radius:1rem;
+        -ms-border-radius:1rem;
+        -o-border-radius:1rem;
+        box-shadow: 0 0 1rem 0 rgba(0,0,0,0.1);
+        margin-bottom: 1.4rem;
+        
+}
+
+    & .title-lenght-tag{
+        position: absolute;
+        right: 0.4rem;
+        background-color:green;
+        height: 3.5rem;
+        width: 3.5rem;
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size:1.7rem;
+        margin: 0.1rem 0;
+        color: #fff;
+}
+    & label{
+        color: #222;
+        font-size: 1.4rem;
+        margin: 0.5rem 0;
+        font-weight: bold;
+
+    }
+    & input{
+        margin: 1rem 0;
+       font-size: 1.5rem;
+
+       font-weight:bold;
+       letter-spacing: 0.2rem;
+        width: 100%;
+        outline: none;
+        border: none;
+        padding: 0.5rem 2rem;
+        background-color: transparent;
+    }
+
+    ::placeholder{
+        text-transform: capitalize;
+        color: rgba(156, 160, 154, 0.579);
+    }
+
+& textarea{
+    width: 100%;
+    background-color: #eee;
+    margin-bottom: 2rem;
+        box-shadow: 0 0 1rem 0 rgba(0,0,0,0.1);
+        border: 0.01rem solid rgba(128, 128, 128, 0.314);
+ padding: 0.5rem 2rem;
+ height: 10rem;
+ outline: none;
+
+}
+
+}
+

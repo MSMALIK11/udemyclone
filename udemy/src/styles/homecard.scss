@@ -2,7 +2,8 @@
   //   margin-top: 2rem;
   width: 100%;
   height: auto;
-  background-color: pink;
+  background-color: #fff !important;
+ 
 }
 .card {
   height: 30rem;
@@ -17,31 +18,26 @@
     text-align: center;
     font-size: 1rem;
     position: absolute;
-    background-color: orange;
+    background-color: crimson;
     color: #fff;
     font-weight: bold;
     padding: 0.7rem 1rem;
     right: 0;
     top: 1rem;
     clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0 50%);
-  }
-  .views {
-    position: absolute;
-    font-size: 0.8rem;
-    background-color: papayawhip;
-    padding: 0.4rem 0.6rem;
-    top: 1rem;
-    color: #333;
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-  }
+
 }
+ 
+
+}
+
 .card .card-title {
   font-size: 1.5rem;
   text-transform: capitalize;
   margin: 1rem 0;
   color: #333;
-  font-weight: bold;
-  text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+  text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
 }
 .card .card-author {
   font-size: 1.3rem;
@@ -67,6 +63,7 @@
 }
 .card:hover {
   box-shadow: 0rem 0rem 3rem rgba(0, 0, 0, 0.329) !important;
+ 
 }
 .heading-wraper {
   display: flex;

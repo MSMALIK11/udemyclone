@@ -8,8 +8,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import CustomButton from "./CustomButton";
+import { useNavigate } from "react-router-dom";
 const CourseTopRightDetails = ({ course, classTitle }) => {
 
+  const navigate = useNavigate();
   return (
     <div>
       <div className="course-baner">
@@ -20,7 +22,7 @@ const CourseTopRightDetails = ({ course, classTitle }) => {
 
           <div className="rating">
             <span className="me-3 text-light ">Rating's</span>
-            <span className="rating-box"> 4.9 </span>
+            <span className="rating-box text-light"> 4.9 </span>
 
             <span>
               <FontAwesomeIcon icon={faStar} className="text-warning ms-2" />
@@ -51,24 +53,19 @@ const CourseTopRightDetails = ({ course, classTitle }) => {
           </h5>
           <h5 className="text-muted">Last update 4/12/2022</h5>
 
-          <div className="enroll sm-d-block md-d-none lg-d-none   sm-justify-content-center">
-            <CustomButton title="Free" />
-            {/* <button
+          <div className="enroll sm-d-block md-d-block lg-d-none   sm-justify-content-center">
+           
+            <button
               onClick={() =>
                 navigate(`/course/${course.title}/${classTitle[0]}`, {
                   state: { courses: course },
                 })
               }
-              className="start-btn mt-4 start-course shadow "
+              className="start-btn  mt-4 start-course shadow "
             >
-              By now
+            Enroll Free
             </button>
-            <button className=" start-btn ms-4  bg-danger mt-md-4 mt-sm-4 shadow">
-              <span>
-                <i className="bi bi-cart me-3"></i>
-              </span>
-              Add to cart
-            </button> */}
+          
           </div>
         </div>
       </div>

@@ -9,7 +9,7 @@ const CourseStructure = () => {
       body: ["introduction-welcome"],
     },
     {
-      title: "react fundamental ",
+      title: "react fundamental",
       id: "2",
       body: [
         "components",
@@ -49,10 +49,10 @@ const CourseStructure = () => {
         <div>
           <span>35 lactures - 03:45:42 total duration</span>
           <div className="course-structure-accourdian mt-4">
-            <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div className="accordion accordion-flush" id="accordionFlushExample">
               {data &&
                 data.map((item, i) => {
-                  return <CourseAccordian key={item.id} data={item} />;
+                  return <CourseAccordian key={item.id+i} data={item} />;
                 })}
             </div>
           </div>

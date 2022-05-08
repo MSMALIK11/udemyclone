@@ -20,7 +20,7 @@ const CourseReviews = () => {
 <DescriptionTitle title="reviews" />
         {data && data.map((item,i)=>{
           return (
-            <div className="reviews-wraper mb-5 ">
+            <div className="reviews-wraper mb-5 " key={i}>
               <div className="author-avatar">
                 <span>
                   <i className="bi bi-person-circle auhtor-icon"> </i>
@@ -30,7 +30,7 @@ const CourseReviews = () => {
                 <h4>{item.name}</h4>
                 <div className="star">
                   {[1, 2, 3, 4].map((item, i) => (
-                    <span>
+                    <span key={i}>
                       <i className="bi bi-star-fill"></i>
                     </span>
                   ))}

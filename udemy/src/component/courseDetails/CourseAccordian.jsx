@@ -19,7 +19,7 @@ const CourseAccordian = ({ data }) => {
           {data &&
             data.body.map((item, i) => {
               return (
-                <div className="accordian-body-info d-flex align-items-center">
+                <div className="transition 2s accordian-body-info d-flex align-items-center" key={i} >
                   <span>
                     <i className="bi bi-play-btn play-btn-icon fs-2 me-3 "></i>
                   </span>

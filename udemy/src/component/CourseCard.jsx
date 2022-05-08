@@ -7,7 +7,7 @@ import Card from './Card';
 
 const CourseCard = () => {
     return (
-        <div>
+        <div className='margin-top'>
             
 
             <Card />

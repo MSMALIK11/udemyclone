@@ -13,50 +13,20 @@ const AllCourse = () => {
         <div className="col-sm-8 col-md-8"> */}
       <div className="row">
         {!card ? (
-          <div class="d-flex justify-content-center">
-            <div class="spinner-border" role="status">
-              <span class="visually-hidden">Loading...</span>
+          <div className="d-flex justify-content-center">
+            <div className="spinner-border" role="status">
+              <span className="visually-hidden">Loading...</span>
             </div>
           </div>
         ) : (
-          card.map((val) => (
-            <div className="col-sm-6 col-md-6 col-lg-3">
+          card.map((val,i) => (
+            <div className="col-sm-6 col-md-6 col-lg-3" key={i}>
               <Card />
             </div>
           ))
         )}
       </div>
-      <nav aria-label="Page navigation example ">
-        <ul class="pagination  ">
-          <li class="page-item">
-            <a class="page-link" href="#">
-              Previous
-            </a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">
-              1
-            </a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">
-              2
-            </a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">
-              3
-            </a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">
-              Next
-            </a>
-          </li>
-        </ul>
-      </nav>
-      {/* {/* </div> */}
-      {/* </div> */}
+      
     </>
   );
 };

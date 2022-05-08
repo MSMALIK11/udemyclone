@@ -1,10 +1,13 @@
 import { useEffect } from "react";
 import { useReducer, createContext } from "react";
 import axios from 'axios';
+import { getUserInfo } from "../API/api";
+
 const initialState = {
   user: null,
   courseList: null,
   singleCourse: null,
+  student:null
 };
 const Context = createContext();
 
@@ -16,6 +19,8 @@ const rootReducer = (state, action) => {
       return { ...state, user: null };
     case "GET_COURSE":
       return { ...state, courseList: action.payload };
+    case "LOAD_USER":
+      return {...state,student:action.payload}  
     default:
       return state;
   }
@@ -25,7 +30,7 @@ const rootReducer = (state, action) => {
 const Provider = ({ children }) => {
   const [state, dispatch] = useReducer(rootReducer, initialState);
 
-  useEffect(() => {
+  useEffect(async() => {
     dispatch({
       type: "LOGIN",
       payload: JSON.parse(window.localStorage.getItem("user")),
@@ -34,6 +39,16 @@ const Provider = ({ children }) => {
       type: "GET_COURSE",
       payload: JSON.parse(window.localStorage.getItem("courseList")),
     });
+
+    // get user profile
+  // const { token } = JSON.parse(window.localStorage.getItem("user"));
+  //   const data = await getUserInfo(token);
+  //    dispatch({
+  //      type: "LOAD_USER",
+  //      payload: data,
+  //    });
+   
+    
   }, []);
 
 
@@ -49,6 +64,7 @@ const Provider = ({ children }) => {
   //   }
   //   getCsrfToken();
   // },[])
+
 
   return (
     <Context.Provider value={{ state, dispatch }}>{children}</Context.Provider>

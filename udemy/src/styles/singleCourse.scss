@@ -1,6 +1,9 @@
+
 .main-container {
   position: relative;
   margin-bottom: 5rem;
+  margin-top: 5rem;
+
   & .start-btn {
     color: #fff;
     background-color: #222;
@@ -116,8 +119,9 @@
   }
   .main-container {
     & .start-btn {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       padding: 0.7rem 4rem;
+      background-color: crimson;
     }
     & .enroll {
       display: block;

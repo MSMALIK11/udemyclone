@@ -22,6 +22,7 @@ const SongleCourse = () => {
   const location = useLocation();
   const course = location.state;
  
+
   useEffect(() => {
     dispatch({
       type: "GET_COURSE",
@@ -35,7 +36,7 @@ const SongleCourse = () => {
   const classTitle = course.lacture.map((session) => session.title);
 
   return (
-    <div className="main-container mt-4 ">
+    <div className="main-container ">
       <div className="bg-dark position-relative">
         {/* course free  price card */}
         <CourseByCard course={course} classTitle={classTitle} />

@@ -6,7 +6,7 @@ import "./style/tabpannel.scss";
 const Mylearning = () => {
   const [activeTab, setActiveTab] = useState("MYLEARNING");
   return (
-    <div className="container  my-learning">
+    <div className="container  my-learning ">
       <h1>
         My <span>Learning</span>
       </h1>
@@ -22,7 +22,7 @@ const getCurrenTab = (tab) => {
       return <AllCourse />;
 
     case "ALLCOURSES":
-      return <h1>ALL COURSES </h1>;
+      return <h1>ALL COURSES  </h1>;
   }
 };
 export default Mylearning;

@@ -3,7 +3,7 @@ import "../../styles/courseplayer/player.scss";
 import { Tabs, Tab } from "react-bootstrap";
 import ContentTab from "../TabPanel/content/ContentTab";
 
-const CourseList = ({ course, setLink }) => {
+const CourseList = ({ course }) => {
   const [key, setKey] = useState("content");
 
   return (

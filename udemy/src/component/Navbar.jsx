@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext, } from "react";
 
 import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,7 +7,7 @@ import {
   faMailBulk,
   faPhone,
   faUserAlt,
-  faHamburger,
+ 
   faBars,
   faPhotoVideo,
 } from "@fortawesome/free-solid-svg-icons";
@@ -177,14 +177,14 @@ const Navbar = () => {
                 </li>
                 <li className="nav-item">
                 
-                    <Link to="/course" className="link nav-link">
+                    <Link to="course" className="link nav-link">
                       Course
                     </Link>
                 
                 </li>
                 <li className="nav-item">
                  
-                    <Link to="/blog" className="link nav-link">
+                    <Link to="blog" className="link nav-link">
                       Blog
                     </Link>
                  

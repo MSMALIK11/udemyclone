@@ -13,7 +13,7 @@ const ContentTab = ({ course, setLink }) => {
 
       {course.lacture.map((session, index) => {
         return (
-          <div className="con-item ">
+          <div className="con-item " key={index}>
             <NavLink
               to={{
                 pathname: `/course/${course.title}/${session.title}`,

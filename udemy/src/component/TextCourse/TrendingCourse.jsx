@@ -1,5 +1,5 @@
 import React from 'react'
-// import '../../styles/BannerReuse/bannerReuse.scss'
+
 import courses from '../TextCourse/data/htmldata';
 import {Link} from 'react-router-dom';
 import "../TextCourse/htmlpages/styles/trending/trendingCourse.scss"
@@ -26,7 +26,7 @@ const TrendingCourse = () => {
 
                           </Link>
                           {course.status==="coming soon"?<div className="coming-soon">
-                              <img src={lock} alt="" />
+                              <img src={lock} alt="coming soon" />
                              
                           </div>
                           :""}
