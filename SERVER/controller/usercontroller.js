@@ -54,24 +54,28 @@ export const userLogin = async (req, res) => {
   }
   try {
     const user = await User.findOne({ email });
-    console.log("email found...", user);
+ 
 
     if (!user) {
       res.json({ message: "invalid email...." });
     }
 
-    console.log("user not exist go ahead");
     const match = await bcrypt.compare(password, user.password);
-    const token = jwt.sign({ _id: user._id }, process.env.JWT_SECRET, {
-      expiresIn: "7d",
-    });
+ 
+     const token = await user.generateToken();
+     const options = {
+       expires: new Date(Date.now() + 90 * 24 * 60 * 60 * 1000),
+       httpOnly: true,
+     };
+
 
     console.log(token);
     if (match) {
       user.password = undefined;
-      res.cookie("jwt", token, {
-        httpOnly: true,
-      });
+         return res
+           .status(200)
+           .cookie("token", token, options)
+           .json({ success: true, user, token });
     } else {
       res.status(400).json({ message: "password not match" });
     }
@@ -90,11 +94,14 @@ export const userLogout = async (req, res) => {
   return res.json({ message: "signout success" });
 };
 
+
+// get current user 
 export const currentUser = async (req, res) => {
-  console.log("user jwt is ", req.cookies.jwt);
+  console.log("req user ", req.user);
+ 
   try {
-    // const user = await User.findById(req.user._id).select("-password").exec();
-    // return res.status(200).json(user);
+    const user = await User.findById(req.user._id).select("-password").exec();
+    return res.status(200).json({success:true,user});
   } catch (error) {
     console.log("current user not found ", error);
   }
